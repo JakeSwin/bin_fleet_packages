@@ -1,0 +1,155 @@
+crowd_sim:
+  agent_groups:
+    - {agents_name: [burger], agents_number: 1, group_id: 0, profile_selector: external_agent, state_selector: external_static, x: 0, y: 0}
+  agent_profiles:
+    - {ORCA_tau: 1, ORCA_tauObst: 0.4, class: 1, max_accel: 0, max_angle_vel: 0, max_neighbors: 10, max_speed: 0, name: external_agent, neighbor_dist: 5, obstacle_set: 1, pref_speed: 0, r: 0.25}
+  enable: 0
+  goal_sets: []
+  model_types: []
+  obstacle_set: {class: 1, file_name: L1_navmesh.nav, type: nav_mesh}
+  states:
+    - {final: 1, goal_set: -1, name: external_static, navmesh_file_name: ""}
+  transitions: []
+  update_time_step: 0.1
+graphs:
+  {}
+levels:
+  L1:
+    doors:
+      - [10, 7, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, -1], name: [1, Door1], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+      - [36, 37, {motion_axis: [1, end], motion_degrees: [3, 90], motion_direction: [2, -1], name: [1, Door2], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+      - [13, 12, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, -1], name: [1, Door3], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+      - [16, 15, {motion_axis: [1, end], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Door4], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+      - [18, 19, {motion_axis: [1, end], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Door5], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+      - [22, 23, {motion_axis: [1, end], motion_degrees: [3, 90], motion_direction: [2, -1], name: [1, Door6], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+      - [29, 30, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Door7], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+    drawing:
+      filename: test_floor_plan.png
+    elevation: 0
+    flattened_x_offset: 0
+    flattened_y_offset: 0
+    floors:
+      - parameters: {ceiling_scale: [3, 1], ceiling_texture: [1, blue_linoleum], indoor: [2, 0], texture_name: [1, blue_linoleum], texture_rotation: [3, 0], texture_scale: [3, 1]}
+        vertices: [2, 5, 4, 3]
+    lanes:
+      - [42, 43, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [43, 44, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [44, 45, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [45, 46, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [46, 47, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [47, 48, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [48, 49, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [44, 50, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [50, 51, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [50, 52, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [52, 53, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [53, 54, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [52, 55, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [55, 56, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [56, 57, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [57, 46, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [53, 55, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+    layers:
+      {}
+    measurements:
+      - [0, 1, {distance: [3, 11]}]
+    vertices:
+      - [260.583, 202.228, 0, ""]
+      - [260.583, 717.14, 0, ""]
+      - [259.184, 188.34, 0, ""]
+      - [260.912, 1458.342, 0, ""]
+      - [1943.881, 1458.342, 0, ""]
+      - [1943.881, 190.068, 0, ""]
+      - [967.621, 181.429, 0, ""]
+      - [965.893, 585.756, 0, ""]
+      - [262.64, 718.804, 0, ""]
+      - [965.893, 720.532, 0, ""]
+      - [967.621, 694.6130000000001, 0, ""]
+      - [1071.294, 720.532, 0, ""]
+      - [1069.566, 834.573, 0, ""]
+      - [1067.962, 944.242, 0, ""]
+      - [1067.838, 964.165, 0, ""]
+      - [1067.962, 987.9349999999999, 0, ""]
+      - [1067.838, 1093.757, 0, ""]
+      - [1067.749, 1126.663, 0, ""]
+      - [1094.916, 1126.663, 0, ""]
+      - [1203.133, 1126.663, 0, ""]
+      - [1228.533, 1126.587, 0, ""]
+      - [1228.533, 1199.158, 0, ""]
+      - [1280.131, 1199.314, 0, ""]
+      - [1385.005, 1199.034, 0, ""]
+      - [1404.664, 1199.034, 0, ""]
+      - [1745.445, 1199.292, 0, ""]
+      - [1767.635, 1199.158, 0, ""]
+      - [1881.676, 1199.158, 0, ""]
+      - [1942.058, 1199.05, 0, ""]
+      - [1745.569, 1223.961, 0, ""]
+      - [1745.173, 1327.022, 0, ""]
+      - [1745.256, 1459.824, 0, ""]
+      - [1404.778, 1460.07, 0, ""]
+      - [628.953, 967.621, 0, ""]
+      - [628.953, 718.804, 0, ""]
+      - [260.912, 965.893, 0, ""]
+      - [1226.805, 642.777, 0, ""]
+      - [1228.533, 533.919, 0, ""]
+      - [1228.533, 516.64, 0, ""]
+      - [1942.153, 518.3680000000001, 0, ""]
+      - [1183.607, 352.49, 0, ""]
+      - [1615.581, 352.49, 0, ""]
+      - [329.019, 249.361, 0, tinyRobot_charger, {is_charger: [4, true], is_holding_point: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, tiny], spawn_robot_type: [1, TinyRobot]}]
+      - [615.198, 640.177, 0, ""]
+      - [1144.787, 643.254, 0, ""]
+      - [1144.787, 593.535, 0, ""]
+      - [1489.817, 595.216, 0, ""]
+      - [1823.679, 1152.453, 0, ""]
+      - [1826.081, 1280.954, 0, ""]
+      - [1541.458, 1279.753, 0, ""]
+      - [1146.348, 893.05, 0, ""]
+      - [790.87, 890.648, 0, ""]
+      - [1148.023, 1049.545, 0, ""]
+      - [881.117, 1050.11, 0, ""]
+      - [365.728, 1046.245, 0, ""]
+      - [1148.118, 1332.318, 0, ""]
+      - [1339.791, 1332.318, 0, ""]
+      - [1338.823, 857.974, 0, ""]
+    walls:
+      - [2, 8, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [8, 34, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [34, 9, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [9, 10, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [9, 11, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [2, 6, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [6, 7, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [6, 5, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [5, 39, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [39, 38, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [38, 37, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [11, 12, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [40, 41, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [36, 20, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [20, 21, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [21, 22, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [20, 19, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [18, 17, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [17, 16, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [15, 14, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [14, 13, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [34, 33, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [33, 14, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [8, 35, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [35, 33, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [35, 3, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [3, 32, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [32, 31, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [31, 4, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [4, 28, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [28, 39, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [27, 28, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [31, 30, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [29, 25, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [25, 26, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [25, 24, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [24, 32, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [23, 24, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+lifts: {}
+name: test
