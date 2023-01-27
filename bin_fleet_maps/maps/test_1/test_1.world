@@ -26,9 +26,14 @@
       </plugin>
     </gui>
     <include>
-      <name>tiny</name>
+      <name>tinyRobot1</name>
       <uri>model://TinyRobot</uri>
       <pose>7.0287913274501275 -5.327067537754023 0.0 0 0 -0.9387456996786488</pose>
+    </include>
+    <include>
+      <name>tinyRobot2</name>
+      <uri>model://TinyRobot</uri>
+      <pose>13.121696522901 -5.327900689826611 0.0 0 0 1.5732759968214043</pose>
     </include>
     <model name="Door1">
       <pose>20.652707647131933 -13.676180590081412 0.0 0 0 -1.5549236233531445</pose>
@@ -127,7 +132,7 @@
         <parent>world</parent>
         <child>right</child>
         <axis>
-          <xyz>0 0 1</xyz>
+          <xyz>0 0 -1</xyz>
           <limit>
             <lower>0</lower>
             <upper>1.57</upper>
@@ -241,7 +246,7 @@
         <parent>world</parent>
         <child>right</child>
         <axis>
-          <xyz>0 0 -1</xyz>
+          <xyz>0 0 1</xyz>
           <limit>
             <lower>0</lower>
             <upper>1.57</upper>
@@ -355,7 +360,7 @@
         <parent>world</parent>
         <child>right</child>
         <axis>
-          <xyz>0 0 1</xyz>
+          <xyz>0 0 -1</xyz>
           <limit>
             <lower>0</lower>
             <upper>1.57</upper>
@@ -435,7 +440,8 @@
       <pose>0 0 0.0 0 0 0</pose>
     </include>
     <rmf_charger_waypoints name="charger_waypoints">
-      <rmf_vertex name="tinyRobot_charger" x="7.0287913274501275" y="-5.327067537754023" level="L1" />
+      <rmf_vertex name="tinyRobot1_charger" x="7.0287913274501275" y="-5.327067537754023" level="L1" />
+      <rmf_vertex name="tinyRobot2_charger" x="13.121696522901" y="-5.327900689826611" level="L1" />
     </rmf_charger_waypoints>
   </world>
 </sdf>

@@ -1,6 +1,6 @@
 crowd_sim:
   agent_groups:
-    - {agents_name: [burger], agents_number: 1, group_id: 0, profile_selector: external_agent, state_selector: external_static, x: 0, y: 0}
+    - {agents_name: [tinyRobot1, tinyRobot2], agents_number: 2, group_id: 0, profile_selector: external_agent, state_selector: external_static, x: 0, y: 0}
   agent_profiles:
     - {ORCA_tau: 1, ORCA_tauObst: 0.4, class: 1, max_accel: 0, max_angle_vel: 0, max_neighbors: 10, max_speed: 0, name: external_agent, neighbor_dist: 5, obstacle_set: 1, pref_speed: 0, r: 0.25}
   enable: 0
@@ -17,11 +17,11 @@ levels:
   L1:
     doors:
       - [10, 7, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, -1], name: [1, Door1], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
-      - [36, 37, {motion_axis: [1, end], motion_degrees: [3, 90], motion_direction: [2, -1], name: [1, Door2], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+      - [36, 37, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Door2], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
       - [13, 12, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, -1], name: [1, Door3], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
-      - [16, 15, {motion_axis: [1, end], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Door4], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
-      - [18, 19, {motion_axis: [1, end], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Door5], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
-      - [22, 23, {motion_axis: [1, end], motion_degrees: [3, 90], motion_direction: [2, -1], name: [1, Door6], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+      - [16, 15, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, -1], name: [1, Door4], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+      - [18, 19, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Door5], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+      - [22, 23, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Door6], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
       - [29, 30, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Door7], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
     drawing:
       filename: test_floor_plan.png
@@ -49,6 +49,10 @@ levels:
       - [56, 57, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
       - [57, 46, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
       - [53, 55, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [45, 58, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [58, 59, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [46, 60, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [43, 61, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
     layers:
       {}
     measurements:
@@ -96,22 +100,26 @@ levels:
       - [1942.153, 518.3680000000001, 0, ""]
       - [1183.607, 352.49, 0, ""]
       - [1615.581, 352.49, 0, ""]
-      - [329.019, 249.361, 0, tinyRobot_charger, {is_charger: [4, true], is_holding_point: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, tiny], spawn_robot_type: [1, TinyRobot]}]
+      - [329.019, 249.361, 0, tinyRobot1_charger, {is_charger: [4, true], is_holding_point: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, tinyRobot1], spawn_robot_type: [1, TinyRobot]}]
       - [615.198, 640.177, 0, ""]
       - [1144.787, 643.254, 0, ""]
       - [1144.787, 593.535, 0, ""]
       - [1489.817, 595.216, 0, ""]
       - [1823.679, 1152.453, 0, ""]
       - [1826.081, 1280.954, 0, ""]
-      - [1541.458, 1279.753, 0, ""]
+      - [1541.458, 1279.753, 0, bathroom2, {is_holding_point: [4, true], is_parking_spot: [4, false]}]
       - [1146.348, 893.05, 0, ""]
-      - [790.87, 890.648, 0, ""]
+      - [790.87, 890.648, 0, bathroom1, {is_holding_point: [4, true], is_parking_spot: [4, false]}]
       - [1148.023, 1049.545, 0, ""]
       - [881.117, 1050.11, 0, ""]
-      - [365.728, 1046.245, 0, ""]
+      - [365.728, 1046.245, 0, bedroom1, {is_holding_point: [4, true], is_parking_spot: [4, false]}]
       - [1148.118, 1332.318, 0, ""]
       - [1339.791, 1332.318, 0, ""]
       - [1338.823, 857.974, 0, ""]
+      - [1144.709, 446.58, 0, ""]
+      - [1793.016, 448.935, 0, stair1, {is_holding_point: [4, true], is_parking_spot: [4, false]}]
+      - [1870.438, 595.213, 0, bedroom2, {is_holding_point: [4, true], is_parking_spot: [4, false]}]
+      - [614.229, 249.4, 0, tinyRobot2_charger, {is_charger: [4, true], is_holding_point: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, tinyRobot2], spawn_robot_type: [1, TinyRobot]}]
     walls:
       - [2, 8, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
       - [8, 34, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]

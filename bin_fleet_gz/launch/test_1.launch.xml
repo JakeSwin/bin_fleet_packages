@@ -6,7 +6,7 @@
   <arg name="failover_mode" default="false"/>
 
   <!-- Common launch -->
-  <include file="$(find-pkg-share bin_fleet)/test_1.launch.xml">
+  <include file="$(find-pkg-share bin_fleet)/launch/test_1.launch.xml">
     <arg name="use_sim_time" value="$(var use_sim_time)"/>
     <arg name="failover_mode" value="$(var failover_mode)"/>
   </include>

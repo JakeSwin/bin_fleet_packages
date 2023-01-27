@@ -104,11 +104,35 @@ levels:
     - - 13
       - 11
       - {}
+    - - 3
+      - 16
+      - {}
+    - - 16
+      - 3
+      - {}
+    - - 16
+      - 17
+      - {}
+    - - 17
+      - 16
+      - {}
+    - - 4
+      - 18
+      - {}
+    - - 18
+      - 4
+      - {}
+    - - 1
+      - 19
+      - {}
+    - - 19
+      - 1
+      - {}
     vertices:
     - - 7.0287913274501275
       - -5.327067537754023
-      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: tinyRobot_charger,
-        spawn_robot_name: tiny, spawn_robot_type: TinyRobot}
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: tinyRobot1_charger,
+        spawn_robot_name: tinyRobot1, spawn_robot_type: TinyRobot}
     - - 13.142397147473742
       - -13.676020368528992
       - {name: ''}
@@ -129,13 +153,13 @@ levels:
       - {name: ''}
     - - 32.929972500155365
       - -27.339201649990674
-      - {name: ''}
+      - {is_holding_point: true, is_parking_spot: false, name: bathroom2}
     - - 24.489287489901184
       - -19.07811431856317
       - {name: ''}
     - - 16.89525588838481
       - -19.026800696041263
-      - {name: ''}
+      - {is_holding_point: true, is_parking_spot: false, name: bathroom1}
     - - 24.52507030327512
       - -22.421297231371575
       - {name: ''}
@@ -144,7 +168,7 @@ levels:
       - {name: ''}
     - - 7.813001056491206
       - -22.350799748306503
-      - {name: ''}
+      - {is_holding_point: true, is_parking_spot: false, name: bedroom1}
     - - 24.527099776272447
       - -28.462141103722576
       - {name: ''}
@@ -154,3 +178,16 @@ levels:
     - - 28.601106596855384
       - -18.328790162202473
       - {name: ''}
+    - - 24.45427373997887
+      - -9.54023211733267
+      - {name: ''}
+    - - 38.303974271331796
+      - -9.59054168479274
+      - {is_holding_point: true, is_parking_spot: false, name: stair1}
+    - - 39.95793067553291
+      - -12.715460117456962
+      - {is_holding_point: true, is_parking_spot: false, name: bedroom2}
+    - - 13.121696522901
+      - -5.327900689826611
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: tinyRobot2_charger,
+        spawn_robot_name: tinyRobot2, spawn_robot_type: TinyRobot}
