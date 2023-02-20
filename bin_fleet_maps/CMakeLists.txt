@@ -39,6 +39,7 @@ install(DIRECTORY
 
 install(DIRECTORY
   test_1
+  inb_floor3
   DESTINATION share/${PROJECT_NAME}/
 )
 
