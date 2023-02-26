@@ -1,7 +1,7 @@
 <?xml version='1.0' ?>
 
 <launch>
-  <arg name="use_sim_time" default="false"/>
+  <arg name="use_sim_time" default="true"/>
   <arg name="failover_mode" default="false"/>
 
   <!-- Common launch -->
@@ -10,6 +10,8 @@
     <arg name="config_file" value="$(find-pkg-share bin_fleet_maps)/inb_floor3/inb_floor3.building.yaml"/>
     <arg name="use_rmf_panel" value="false"/>
   </include>
+
+  <include file="$(find-pkg-share bin_fleet)/launch/ff_server.launch.xml"/>
 
   <!-- TinyRobot fleet adapter and robot state aggregator needed for the TinyRobot slotcar_plugin -->
   <group>
