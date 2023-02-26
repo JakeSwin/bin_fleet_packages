@@ -34,7 +34,7 @@ endif()
 
 install(DIRECTORY
   launch
-  DSTINATION share/${PROJECT_NAME}/
+  DESTINATION share/${PROJECT_NAME}/
 )
 
 ament_package()
