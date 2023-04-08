@@ -1,0 +1,45 @@
+- operation: Add
+  participant_description:
+    name: robot2
+    group: turtlebot2
+    responsiveness: Responsive
+    profile:
+      footprint:
+        type: Circle
+        index: "\x00"
+      vicinity:
+        type: Circle
+        index: "\x01"
+      shape_context:
+        - 0.3
+        - 0.5
+- operation: Add
+  participant_description:
+    name: robot1
+    group: turtlebot2
+    responsiveness: Responsive
+    profile:
+      footprint:
+        type: Circle
+        index: "\x00"
+      vicinity:
+        type: Circle
+        index: "\x01"
+      shape_context:
+        - 0.3
+        - 0.5
+- operation: Add
+  participant_description:
+    name: robot3
+    group: turtlebot2
+    responsiveness: Responsive
+    profile:
+      footprint:
+        type: Circle
+        index: "\x00"
+      vicinity:
+        type: Circle
+        index: "\x01"
+      shape_context:
+        - 0.3
+        - 0.5

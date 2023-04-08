@@ -13,6 +13,7 @@
   <test_depend>ament_lint_common</test_depend>
 
   <exec_depend>ros2launch</exec_depend>
+  <exec_depend>rmf_demos_gz</exec_depend>
   <exec_depend>rmf_demos_maps</exec_depend>
 
   <exec_depend>rmf_traffic_ros2</exec_depend>
