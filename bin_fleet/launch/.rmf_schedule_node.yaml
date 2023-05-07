@@ -11,8 +11,8 @@
         type: Circle
         index: "\x01"
       shape_context:
-        - 0.3
-        - 0.5
+        - 0.16
+        - 1.25
 - operation: Add
   participant_description:
     name: robot1
@@ -26,8 +26,8 @@
         type: Circle
         index: "\x01"
       shape_context:
-        - 0.3
-        - 0.5
+        - 0.16
+        - 1.25
 - operation: Add
   participant_description:
     name: robot3
@@ -41,5 +41,5 @@
         type: Circle
         index: "\x01"
       shape_context:
-        - 0.3
+        - 0.17
         - 0.5

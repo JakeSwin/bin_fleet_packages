@@ -7,11 +7,17 @@
   <!-- Common launch -->
   <include file="$(find-pkg-share rmf_demos)/common.launch.xml">
     <arg name="use_sim_time" value="$(var use_sim_time)"/>
+    <arg name="viz_config_file" value="$(find-pkg-share bin_fleet_maps)/inb_floor3/inb_floor3.rviz"/>
     <arg name="config_file" value="$(find-pkg-share bin_fleet_maps)/inb_floor3/inb_floor3.building.yaml"/>
     <arg name="use_rmf_panel" value="false"/>
   </include>
 
-  <include file="$(find-pkg-share bin_fleet)/launch/ff_server.launch.xml"/>
+  <include file="$(find-pkg-share bin_fleet)/launch/ff_server.launch.xml">
+    <arg name="translation_x" value="-9.25"/>
+    <arg name="translation_y" value="59.6"/>
+    <arg name="rotation" value="0.0"/>
+    <arg name="scale" value="1.0"/>
+  </include>
 
   <!-- TinyRobot fleet adapter and robot state aggregator needed for the TinyRobot slotcar_plugin -->
   <group>

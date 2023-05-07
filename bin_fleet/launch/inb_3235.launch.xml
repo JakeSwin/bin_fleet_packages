@@ -7,6 +7,7 @@
   <!-- Common launch -->
   <include file="$(find-pkg-share bin_fleet)/launch/include/common.launch.xml">
     <arg name="use_sim_time" value="$(var use_sim_time)"/>
+    <arg name="viz_config_file" value="$(find-pkg-share bin_fleet_maps)/inb_floor3/inb_floor3.rviz"/>
     <arg name="config_file" value="$(find-pkg-share bin_fleet_maps)/inb_3235/inb_3235.building.yaml"/>
     <arg name="use_rmf_panel" value="false"/>
   </include>
